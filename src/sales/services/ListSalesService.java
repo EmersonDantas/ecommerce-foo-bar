@@ -13,8 +13,9 @@ public class ListSalesService {
 
     private final SaleRepository saleRepository;
 
+    //TODO td(name: Tempo de resposta é lento;)
+
     public List<Sale> listAllSales() {
-        //TODO td(name: Tratar possiveis erros;)
         return saleRepository.findAll();
     }
 }
