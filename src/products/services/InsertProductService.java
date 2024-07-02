@@ -12,6 +12,8 @@ public class InsertProductService {
 
     private final ProductRepository productRepository;
 
+    //TODO td(name: Tempo de resposta é lento;)
+
     public Product insertProduct(ProductDTO productDTO) {
         return productRepository.save(Product.from(productDTO));
     }
