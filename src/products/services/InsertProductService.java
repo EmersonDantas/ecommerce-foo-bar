@@ -12,6 +12,8 @@ public class InsertProductService {
 
     private final ProductRepository productRepository;
 
+        //TODO td(name: Tratar valores enviados;)
+
     public Product insertProduct(ProductDTO productDTO) {
         return productRepository.save(Product.from(productDTO));
     }
