@@ -13,10 +13,8 @@ public class ListSalesService {
 
     private final SaleRepository saleRepository;
 
-
-    //TODO td(name: Faltam testes unitários;)
-
     public List<Sale> listAllSales() {
+        //TODO td(name: Tratar possiveis erros;)
         return saleRepository.findAll();
     }
 }
